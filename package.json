@@ -1,0 +1,15 @@
+{
+  "name": "rename",
+  "version": "1.0.0",
+  "description": "batch rename file/folder based on regex",
+  "main": "rename.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["rename", "regex", "rename file", "rename folder"],
+  "author": "@oliviercuyp",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
