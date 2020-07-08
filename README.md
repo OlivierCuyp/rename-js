@@ -43,33 +43,33 @@ On your terminal in the project folder run:
 
 Considering you have these files:
 
-- some/path/image.jpg
-- some/path/test1.txt
-- some/path/test2.txt
-- some/path/test3.txt
+- /some/path/image.jpg
+- /some/path/test1.txt
+- /some/path/test2.txt
+- /some/path/test3.txt
 
 **This command:**
 
 ```shell
 ./rename.js \
-  --dirname='/full/path/to/the/folder' \
+  --dirname='/some/path' \
   --pattern='([^.])+\.txt' \
   --replacment='$1.md'
 ```
 
 will result in:
 
-- some/path/image.jpg
-- some/path/test1.md
-- some/path/test2.md
-- some/path/test3.md
+- /some/path/image.jpg
+- /some/path/test1.md
+- /some/path/test2.md
+- /some/path/test3.md
 
 
 **This command:**
 
 ```shell
 ./rename.js \
-  --dirname='/full/path/to/the/folder' \
+  --dirname='/some/path' \
   --pattern='([^.])+\.(.+)' \
   --counter \
   --counter-base=100 \
@@ -80,10 +80,10 @@ will result in:
 
 will result in:
 
-- some/path/100-test3.md
-- some/path/110-test2.md
-- some/path/120-test1.md
-- some/path/130-image.jpg
+- /some/path/100-test3.md
+- /some/path/110-test2.md
+- /some/path/120-test1.md
+- /some/path/130-image.jpg
 
 
 
