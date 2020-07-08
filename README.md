@@ -29,6 +29,8 @@ On your terminal in the project folder run:
   --replacment='prefix-$1.txt'
 ```
 
+***Note:** if it doesn't work with `./rename.js` try `node ./rename.js`*
+
 ### Optional arguments
 
 - --debug will log error with the stacktrace
@@ -46,7 +48,7 @@ Considering you have these files:
 - some/path/test2.txt
 - some/path/test3.txt
 
-This command:
+**This command:**
 
 ```shell
 ./rename.js \
@@ -63,7 +65,7 @@ will result in:
 - some/path/test3.md
 
 
-This command:
+**This command:**
 
 ```shell
 ./rename.js \
@@ -72,7 +74,7 @@ This command:
   --counter \
   --counter-base=100 \
   --counter-step=10 \
-  --reverse
+  --reverse \
   --replacment='${counter}-$1.$2'
 ```
 
